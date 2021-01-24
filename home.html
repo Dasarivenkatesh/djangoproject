@@ -1,0 +1,15 @@
+{% extends "base1.html" %}
+
+{% block title %} HOME {% endblock %}
+
+{% block content %}
+
+<h2>all brands list</h2>
+<table>
+
+</table>
+{% for brands in flist %}
+  <li><a href="details/{{brands.name}}">{{brands.name}}</a><li>
+{% endfor %}
+
+{% endblock %}

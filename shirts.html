@@ -1,0 +1,19 @@
+{% extends "base1.html" %}
+
+{% block title %} HOME {% endblock %}
+
+{% block content %}
+
+<h2>all brands list</h2>
+<table>
+    <tr>
+	<td><h5 align:center><a href="/">HOME</a></h5></td>
+	<td><h5 align:center><a href="about/">About Us</a></h5></td>
+	<td><h5 align:center><a href="contact/">Contact-us</a></h5></td>
+    </tr>
+</table>
+{% for brands in slist %}
+  <li><a href="sdetails/{{brands.name}}">{{brands.name}}</a><li>
+{% endfor %}
+
+{% endblock %}
